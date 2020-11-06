@@ -15,11 +15,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:largeHeap="true">
-        <activity
-            android:name="com.commonsware.cwac.cam2.CameraActivity"
-            android:icon="@mipmap/ic_camera_photo_black"
-            android:label="Camera"/>
-
         <activity android:name="it.slyce.messaging.ViewImageActivity">
         </activity>
 

@@ -23,13 +23,12 @@
         <attr name="roundedImageView_widthToHeightRatio" format="float"/>
     </declare-styleable>
 
+
+
     <declare-styleable name="FontEditText">
         <attr name="editText_font" format="string"/>
     </declare-styleable>
 
-    <declare-styleable name="FontTextView">
-        <attr name="font" format="string"/>
-    </declare-styleable>
 
     <declare-styleable name="SlyceMessagingTheme">
         <attr name="backgroundColor" format="color"/>

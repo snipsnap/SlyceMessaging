@@ -1,9 +1,9 @@
 package it.snipsnap.slyce_messaging_example;
 
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             message.setUserId("LP");
             message.setSource(MessageSource.EXTERNAL_USER);
         } else {
-            message.setAvatarUrl("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10989174_799389040149643_722795835011402620_n.jpg?oh=bff552835c414974cc446043ac3c70ca&oe=580717A5");
+            message.setAvatarUrl("https://lh3.googleusercontent.com/-Y86IN-vEObo/AAAAAAAAAAI/AAAAAAAKyAM/6bec6LqLXXA/s0-c-k-no-ns/photo.jpg");
             message.setUserId("MP");
             message.setSource(MessageSource.LOCAL_USER);
         }
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         hasLoadedMore = false;
 
         slyceMessagingFragment = (SlyceMessagingFragment) getFragmentManager().findFragmentById(R.id.fragment_for_slyce_messaging);
-        slyceMessagingFragment.setDefaultAvatarUrl("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10989174_799389040149643_722795835011402620_n.jpg?oh=bff552835c414974cc446043ac3c70ca&oe=580717A5");
+        slyceMessagingFragment.setDefaultAvatarUrl("https://lh3.googleusercontent.com/-Y86IN-vEObo/AAAAAAAAAAI/AAAAAAAKyAM/6bec6LqLXXA/s0-c-k-no-ns/photo.jpg");
         slyceMessagingFragment.setDefaultDisplayName("Matthew Page");
         slyceMessagingFragment.setDefaultUserId("uhtnaeohnuoenhaeuonthhntouaetnheuontheuo");
 
@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onUserSendsMediaMessage(Uri imageUri) {
-                Log.d("inf", "******************************** " + imageUri);
+            public void onUserSendsMediaMessage() {
+                Log.d("inf", "******************************** ");
             }
         });
 

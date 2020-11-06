@@ -28,7 +28,6 @@
             android:textAllCaps="true"
             android:textColor="@color/text_white"
             android:textSize="16sp"
-            app:font="museo_sans_500.otf"
             tools:text="JF" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -50,7 +49,6 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:riv_corner_radius="3dp"
             app:roundedImageView_widthToHeightRatio="1.5" />
     </FrameLayout>
 

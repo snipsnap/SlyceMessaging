@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/background_gray_lightest">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/slyce_messaging_view_horiz_divider">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/slyce_messaging_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             android:paddingTop="8dp"
             android:scrollbars="vertical" />
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
     <View
@@ -51,7 +51,7 @@
             android:padding="4dp"
             android:scaleType="fitCenter"
             android:src="@mipmap/ic_camera_photo"
-            android:tint="@color/background_navy" />
+            app:tint="@color/background_navy" />
 
         <it.slyce.messaging.view.text.FontEditText
             android:id="@+id/slyce_messaging_edit_text_entry_field"
@@ -70,8 +70,7 @@
             android:paddingTop="12dp"
             android:textColor="@color/text_navy"
             android:textColorHint="@color/text_navy_transparent_50"
-            android:textSize="14sp"
-            app:font="museo_sans_300.otf" />
+            android:textSize="14sp" />
 
 
         <ImageView
@@ -88,7 +87,7 @@
             android:padding="8dp"
             android:scaleType="fitCenter"
             android:src="@mipmap/ic_send"
-            android:tint="@color/background_navy" />
+            app:tint="@color/background_navy" />
 
     </RelativeLayout>
 

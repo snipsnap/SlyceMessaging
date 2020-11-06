@@ -28,7 +28,6 @@
             android:textAllCaps="true"
             android:textColor="@color/text_white"
             android:textSize="16sp"
-            app:font="museo_sans_500.otf"
             tools:text="JF"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -47,7 +46,7 @@
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/vd_ic_scout_carrot"
-        android:tint="@color/background_white"/>
+        app:tint="@color/background_white" />
 
     <FrameLayout
         android:id="@+id/message_scout_text_view_group_bubble"
@@ -67,7 +66,6 @@
             android:gravity="left"
             android:textColor="@color/text_navy"
             android:textSize="14sp"
-            app:font="museo_sans_500.otf"
             tools:text="You can get pizza at Zio's. It is located just beneath your office!"/>
     </FrameLayout>
 

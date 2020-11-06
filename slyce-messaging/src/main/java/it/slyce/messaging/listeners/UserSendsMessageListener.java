@@ -7,5 +7,5 @@ import android.net.Uri;
  */
 public interface UserSendsMessageListener {
     public void onUserSendsTextMessage(String text);
-    public void onUserSendsMediaMessage(Uri imageUri);
+    public void onUserSendsMediaMessage();
 }

@@ -25,18 +25,18 @@ ext {
 }
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 24
-        versionCode 102
-        versionName "4.0"
+        targetSdkVersion 30
+        versionCode 104
+        versionName "5.1"
         multiDexEnabled true
         generatedDensities = []
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
     aaptOptions {
@@ -66,29 +66,29 @@ android {
 
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.jar'], dir: 'libs')
 
     // Test
-    testCompile 'junit:junit:4.12'
-    androidTestCompile "com.android.support.test:runner:$rootProject.ext.testRunnerVersion"
-    androidTestCompile "com.android.support:support-annotations:24.0.0"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.annotation:annotation:1.1.0'
     // Handle support annotation library conflict with testing support libraries
     configurations.androidTestCompile.dependencies.each { androidTestCompileDependency ->
         androidTestCompileDependency.exclude group: 'com.android.support'
     }
 
     // Design
-    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibVersion"
-    compile "com.android.support:design:$rootProject.ext.supportLibVersion"
-    compile "com.android.support:percent:$rootProject.ext.supportLibVersion"
-    compile "com.android.support:recyclerview-v7:$rootProject.ext.supportLibVersion"
-    compile "com.android.support:support-v13:$rootProject.ext.supportLibVersion"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
 
     // Image
-    compile 'com.makeramen:roundedimageview:2.2.1'
-    compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.commonsware.cwac:cam2:0.6.2'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }
 
 // Place it at the end of the file

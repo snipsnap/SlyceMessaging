@@ -46,7 +46,7 @@ public class FontTextView extends TextView {
         String font = null;
 
         // Load in font attribute
-        if (attrs != null) {
+        /*if (attrs != null) {
             final TypedArray a = context.obtainStyledAttributes(
                     attrs,
                     R.styleable.FontTextView,
@@ -55,7 +55,7 @@ public class FontTextView extends TextView {
 
             font = a.getString(R.styleable.FontTextView_font);
             a.recycle();
-        }
+        }*/
 
         // Set font if available
         if (!TextUtils.isEmpty(font)) {

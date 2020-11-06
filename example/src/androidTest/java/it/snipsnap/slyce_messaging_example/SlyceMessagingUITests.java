@@ -1,8 +1,8 @@
 package it.snipsnap.slyce_messaging_example;
 
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
-import android.support.v7.widget.RecyclerView;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.recyclerview.widget.RecyclerView;
 import android.test.ActivityInstrumentationTestCase2;
 
 import org.junit.Before;

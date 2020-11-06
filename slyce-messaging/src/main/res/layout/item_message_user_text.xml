@@ -28,7 +28,6 @@
             android:textAllCaps="true"
             android:textColor="@color/text_white"
             android:textSize="16sp"
-            app:font="museo_sans_500.otf"
             tools:text="JF"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -65,7 +64,6 @@
             android:gravity="left"
             android:textColor="@color/text_navy"
             android:textSize="14sp"
-            app:font="museo_sans_500.otf"
             tools:text="In need of pizza. Can you help?"/>
     </FrameLayout>
 
